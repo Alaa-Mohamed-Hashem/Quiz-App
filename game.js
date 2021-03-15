@@ -91,7 +91,7 @@ choices.forEach(choice => {
             n.parentElement.classList.remove(classActive);
             game.classList.remove('disabled');
             getNewQuestions();
-        }, 2000);
+        }, 1000);
     });
 });
 
