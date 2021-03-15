@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Quiz - play</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="loader"></div>
+        <div class="game hidden">
+            <div id="hud">
+                <div id="hud-item">
+                    <p id="progrssText" class="hud-prefix"> question</p>
+                    <div id="progressBar">
+                        <div class="progress-bar-full"></div>
+                    </div>
+                </div>
+                <div id="hud-item">
+                    <p class="hud-prefix">score</p>
+                    <h2 class="hud-main-text" id="score">0</h2>
+                </div>
+            </div>
+
+            <h2 id="question">Inside which HTML element do we put the JavaScript??</h2>
+            <div class="choice-container q1">
+                <p class="choice-prefix">A</p>
+                <p class="choice-text" data-number="0">JavaScript</p>
+            </div>
+            <div class="choice-container q2">
+                <p class="choice-prefix">B</p>
+                <p class="choice-text" data-number="1">React Js</p>
+            </div>
+            <div class="choice-container q3">
+                <p class="choice-prefix">C</p>
+                <p class="choice-text" data-number="2">Angular</p>
+            </div>
+            <div class="choice-container q4">
+                <p class="choice-prefix">D</p>
+                <p class="choice-text" data-number="3">Vue JS</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+
+</html>
